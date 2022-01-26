@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;  
+}
+
+#landing {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(https://res.cloudinary.com/adriandzk/image/upload/v1502300044/pexels-photo-187334_soyqap.jpg) no-repeat 50% 50%;
+	opacity: 0.9;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+#landing .home {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+	margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.content h1 {
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 400%;
+}
+
+
+
+/* Wrapper */
+.icon-button {
+	background-color: lightrey;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+
+.icon-button:hover span {
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 3.6rem;
+	margin: -1.8rem;
+}
+.linkedin span {
+	background-color: #4099ff;
+}
+.github span {
+	background-color: #333;
+}
+.instagram span {
+	background-color: #f56040;
+}
+
+.freecodecamp span  {
+    background-color: #006400;
+}
+
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 3.6rem;
+	left: 0;
+	line-height: 3.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 3.6rem;
+	z-index: 10;
+}
+.icon-button .fa.fa-linkedin {
+	color: #4099ff;
+}
+.icon-button .fa.fa-github {
+	color: #333;
+}
+.icon-button .fa.fa-instagram {
+	color: #f56040;
+}
+
+.icon-button .fa.fa-free-code-camp {
+    color: #006400;
+}
+
+.icon-button:hover .fa.fa-linkedin,
+.icon-button:hover .fa.fa-github,
+.icon-button:hover .fa.fa-instagram,
+.icon-button:hover .fa.fa-free-code-camp {
+	color: white;
+}
+
+.container h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 300%;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+
+/* About */
+
+.description {
+	max-width: 420px;
+	text-align: center;
+	margin: 60px auto;
+}
+
+.description p {
+	margin-top: 20px;
+	text-align: justify;
+	font-size: 130%;
+	font-family: 'Raleway';
+}
+
+
+.img-profile {
+	max-width: 420px;
+	text-align: center;
+	margin: 60px auto;
+}
+
+
+.placeholder {
+	margin: 20px auto;
+	border: 3px solid #3CB371 ;
+}
+
+
+.container h3 {
+	
+	font-size: 200%;
+	font-family: 'Raleway';
+	background-color: #3CB371;
+	text-shadow: 2px 2px #333333;
+	width: 280px;
+	padding: 10px;
+	margin: 0 auto;
+	color: white;
+	opacity: 0.8;
+}
+
+
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 200%;
+  }
+	
+	.container h3 {
+	font-size: 200%;
+	font-family: 'Raleway';
+	background-color: #3CB371;
+	text-shadow: 2px 2px #333333;
+	width: 200px;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	opacity: 0.8;
+	}
+	
+}
+
+
+/* Contact Form */
+
+#contactme input[type="text"],
+#contactme input[type="email"],
+#contactme input[type="tel"],
+#contactme input[type="url"],
+#contactme textarea,
+#contactme button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contactme {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 50px 0;
+  box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contactme input[type="text"],
+#contactme input[type="email"],
+#contactme input[type="tel"],
+#contactme input[type="url"],
+#contactme textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contactme input[type="text"]:hover,
+#contactme input[type="email"]:hover,
+#contactme input[type="tel"]:hover,
+#contactme input[type="url"]:hover,
+#contactme textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contactme textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contactme button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #3CB371;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contactme button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contactme button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+#contactme input:focus,
+#contactme textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+/* Footer */
+
+footer {
+	background-color: #2a2720;
+	color: whitesmoke;
+}
+
+
+.wraper {
+    max-width: 300px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.wraper > a {
+    margin: 0 8px;
+}
