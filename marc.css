@@ -276,13 +276,10 @@ body {
   .horizontal-line {
     margin-left: 10vw;
     margin-right: 10vw;
-  }
-  .idisplay{
-    width:100px;
-    height:100px;
-    position:relative;
+    
   }
   
+
   /* MIN WIDTH - 1200PX */
   @media (min-width: 1200px) {
   
